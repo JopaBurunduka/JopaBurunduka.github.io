@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центрирование изображения</title>
+    <style>
+        body {
+            height: 100vh; /* Высота окна браузера */
+            display: flex;
+            justify-content: center; /* Центрирование по горизонтали */
+            align-items: center; /* Центрирование по вертикали */
+            margin: 0; /* Убираем отступы */
+        }
+        .pic {
+            text-align: center; /* Центрирование текста внутри .pic */
+        }
+        #image {
+            max-width: 100%; /* Ограничение ширины изображения */
+            max-height: 100%; /* Ограничение высоты изображения */
+        }
+        button {
+            margin: 5px; /* Отступы между кнопками */
+        }
+        .active {
+            background-color: yellow; /* Пример активного состояния кнопки */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pic">
+        <img id="image" src="vam.jpg" alt="Фото">
+    </div>
+    <div>
+        
+    </div>
+
+    <script>
+        document.body.addEventListener('click', e => {
+            if (!e.target.matches('button')) return;
+            document.querySelector('.pic img').src = e.target.dataset.src;
+            
+            document.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+        });
+    </script>
+
+</body>
+</html>

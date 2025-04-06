@@ -1,0 +1,690 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+    shapka {
+    display: flex;
+    position: relative;
+    padding: 25;
+    background: #1c1b3b;
+    }
+    shapka p {
+        display: flex;
+        padding: 2;
+        color: #ffffff;
+        margin-right: 8;
+        font-size: 15px;   
+    }
+    
+    explorer a{
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 20;
+        margin-left: 20;
+    }
+    .navlink:hover {
+      color: white;
+      }  
+    explorer p{
+        text-align: center;
+    }
+    .navlink { 
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        font-weight: 600;
+        color: #bfbfbf;
+        top: 55px;
+        text-decoration: none;
+        transition: color .2s linear;
+    }  
+    .navlink:after {
+    content: ""; 
+    display: block; 
+    width: 100%; 
+    height: 5px;
+    display: none;
+    background-color: #082157;
+    position: absolute; 
+    top: 33;
+    left: 0;
+    
+    z-index: 1;
+    }
+    .navlink:hover:after {
+    display: block;
+    }  
+    .proverb {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+          position: absolute;
+          bottom: 70px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 10px 20px;
+          border-radius: 5px;
+      }
+    .par{
+        text-align: center;
+    }
+    .svg{
+      color: white;
+    }
+    explorer{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      left: 50%;
+      top: 75px;
+      transform: translateX(-50%);
+      padding: 70px 0px;
+      text-decoration: none;
+      background-color: rgba(44, 65, 128, 0.2); 
+    }
+    end{
+      
+        display: flex;
+        padding: 50; 
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background: #312e2e;
+    }
+    map{
+        padding: 10;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 60%;
+    }
+    inf{
+        display: flex;
+        padding: 30;
+        flex-direction: column;
+        position: relative;
+        margin-right: 215;
+    }
+    inf p{
+      margin-top: 10px;
+      columns: #8d8d8d;
+      margin-bottom: 10px;
+    }
+    inf a{
+      text-decoration: none;
+      padding-top: 10;
+    }
+    sm{
+        display: flex;
+        position: relative;
+        width: 300px;
+        padding: 50; 
+        text-decoration: none;
+    }
+    sm1 {
+    list-style: none;
+    }
+    .example-2 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+    }
+    .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    }
+    .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+    }
+    .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    }
+    .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+    }
+    .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    }
+    .example-2 .icon-content a:hover {
+    color: white;
+    }
+    .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    }
+    .example-2 .icon-content a:hover .filled {
+    height: 100%;
+    }
+    .example-2 .icon-content a[data-social="instagram"] .filled,
+    .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+    }
+    .example-2 .icon-content a[data-social="youtube"] .filled,
+    .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
+    }
+    .example-2 .icon-content a[data-social="telegram"] .filled,
+    .example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
+    background-color: #0088cc;
+    }
+    .example-2 .icon-content a[data-social="facebook"] .filled,
+    .example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+    background-color: #144863;
+    }
+    .page-title {
+      text-align: center;
+    }
+    .slider-container {
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .prev-button,
+    .next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+    }
+    .prev-button {
+      left: 10px;
+    }
+    .next-button {
+      right: 10px;
+    }
+    .header__btn{
+      background-color: transparent;
+    }
+    .header__btn {
+        cursor: pointer;
+        color: white;
+        border: 1px solid transparent;
+        padding: px 3px;
+        border-radius: 10px;
+        transition: 0.3s;
+        font-size: 20px;
+        background-color: transparent;
+    }
+    button {
+  background-color: transparent;
+  border-color: gray;
+  border: 1.5px solid #9d9c9c;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.1px 10px; /* Устанавливает размеры кнопки */
+  margin: 0 auto; /* Центрирует кнопку по горизонтали */
+  margin-top: auto; /* Смещает кнопку вниз */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+    .secondclass{
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.secondclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.secondclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.secondclass .secondclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.secondclass:hover .secondclass{
+    display: block;
+}
+.secondclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.secondclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.firstclass{
+    display: inline-block;
+}
+.firstclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.firstclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.firstclass .firstclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.firstclass:hover .firstclass{
+    display: block;
+    margin: 0;
+}
+.firstclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.firstclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.thirdclass{
+    display: inline-block;
+}
+.thirdclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.thirdclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.thirdclass .thirdclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.thirdclass:hover .thirdclass{
+    display: block;
+}
+.thirdclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.thirdclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.fourthclass{
+    display: inline-block;
+}
+.fourthclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.fourthclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.fourthclass .fourthclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.fourthclass:hover .fourthclass{
+    display: block;
+}
+.fourthclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.fourthclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.fifthclass{
+    display: inline-block;
+}
+.fifthclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.fifthclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.fifthclass .fifthclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.fifthclass:hover .fifthclass{
+    display: block;
+}
+.fifthclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.fifthclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.sixthclass{
+    display: inline-block;
+}
+.sixthclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.sixthclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.sixthclass .sixthclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.sixthclass:hover .sixthclass{
+    display: block;
+}
+.sixthclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.sixthclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.seventhclass{
+    display: inline-block;
+}
+.seventhclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.seventhclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.seventhclass .seventhclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.seventhclass:hover .seventhclass{
+    display: block;
+}
+.seventhclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.seventhclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.eighthclass{
+    display: inline-block;
+}
+.eighthclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.eighthclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.eighthclass .eighthclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.eighthclass:hover .eighthclass{
+    display: block;
+}
+.eighthclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.eighthclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.ninthclass{
+    display: inline-block;
+}
+.ninthclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.ninthclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.ninthclass .ninthclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.ninthclass:hover .ninthclass{
+    display: block;
+}
+.ninthclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.ninthclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.tenthclass{
+    display: inline-block;
+}
+.tenthclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.tenthclass a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.tenthclass .tenthclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.tenthclass:hover .tenthclass{
+    display: block;
+}
+.tenthclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.tenthclass a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.eleventhclass{
+    display: inline-block;
+}
+.eleventhclass button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.eleventhclass p{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}.eleventhclass a{
+    text-decoration: none;
+}
+.eleventhclass .eleventhclass{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.eleventhclass:hover .eleventhclass{
+    display: block;
+}
+.eleventhclass:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.eleventhclass p:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.paragraphs .a{
+
+  background-color: hsl(0, 0%, 80%);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+.navlink:hover:after {
+display: block;
+} 
+ul {
+list-style: none;
+}
+books{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
